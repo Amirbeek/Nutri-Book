@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FridgeSense - Recipe Suggestions</title>
+    <link rel="stylesheet" href="RecipeHold.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">FridgeSense</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Meal Planning</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">User Profile</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </header>
+
+    <section class="fridgesense">
+        <h2>FridgeSense - Find Recipes</h2>
+        <form action="recipe_suggestions.php" method="post">
+            <label for="ingredientList">Enter your available ingredients (comma-separated):</label>
+            <input type="text" id="ingredientList" name="ingredientList" required>
+            <button type="submit">Get Recipe Suggestions</button>
+        </form>
+    </section>
+
+    <section class="recipe-list">
+        <!-- backend pending -->
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+{
+    "short_name": "allergies",
+    "name": "Create React App Sample",
+    "$schema": [
+        
+            {
+              "common_allergies": "Peanuts",
+              "uncommon_allergies": "Red meat allergy: Some people can develop an allergy to a sugar molecule called alpha-gal found in mammalian meat (e.g., beef, pork, lamb).",
+              "other": "Example Other Text 1"
+            },
+            {
+              "common_allergies": "Fish (e.g., salmon, tuna, cod)",
+              "uncommon_allergies": "",
+              "other": ""
+            },
+            {
+              "common_allergies": "",
+              "uncommon_allergies": "Sulphites (a group of sulfur-based compounds often used as food preservatives)",
+              "other": "Another Example Text 2"
+            },
+            {
+              "common_allergies": "Milk",
+              "uncommon_allergies": "Lupin (a type of legume)",
+              "other": "Additional Text 3"
+            },
+            {
+              "common_allergies": "Eggs",
+              "uncommon_allergies": "",
+              "other": ""
+            },
+            {
+              "common_allergies": "Soy",
+              "uncommon_allergies": "Mustard",
+              "other": "Text Example 4"
+            },
+            {
+              "common_allergies": "Tree nuts (e.g., almonds, walnuts, cashews)",
+              "uncommon_allergies": "",
+              "other": "Different Text 5"
+            },
+            {
+              "common_allergies": "",
+              "uncommon_allergies": "Celery",
+              "other": "Sample Text 6"
+            },
+            {
+              "common_allergies": "Wheat",
+              "uncommon_allergies": "",
+              "other": ""
+            },
+            {
+              "common_allergies": "",
+              "uncommon_allergies": "Stone fruits (e.g., peaches, cherries, apricots) for some individuals with pollen-food syndrome",
+              "other": "Text Example 7"
+            }
+    ]
+}
+

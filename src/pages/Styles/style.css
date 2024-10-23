@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    box-sizing: border-box;
+}
+
+.message {
+    display: block;
+    padding-top: 15px;
+}
+
+.message b {
+    color: darkred;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 25%;
+    margin-top: 70px;
+    /*background-image: linear-gradient(rgba(250, 245, 233, 0.5), rgba(255, 204, 0, 0.4)), url(.../SiteBackground/WoodBackground.jpg);*/
+    background-position: center;
+    background-size: cover;
+
+    margin-bottom: -160px;
+
+}
+
+
+.form-box {
+    height: fit-content;
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FAF5E9;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #004f27;
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    width: 30%;
+    height: 4px;
+    border-radius: 3px;
+    background: #004f27;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-box #separator {
+    margin-top: 20px;
+}
+
+.input-field {
+    background: #ecd9ab;
+    margin: 15px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-height: fit-content;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.input-field input, textarea {
+    font-size: larger;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #004f27;
+}
+
+form p {
+    text-align: left;
+    font-size: medium;
+}
+
+form p a {
+    color: #004f27;
+}
+
+.button-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.button-field button {
+    flex-basis: 48%;
+    background: #004f27;
+    font-size: large;
+    color: #FFCC00;
+    height: 44px;
+    border-radius: 10px;
+    border: 0;
+    outline: #004f27;
+    cursor: pointer;
+    transition: background 1s;
+
+}
+
+.input-group {
+    transition: height 0.5s;
+    /*Adjust this parameter to change the height of the box*/
+    height: 300px;
+}
+
+.button-field button.disable {
+    background: rgba(236, 217, 171, 0.6);
+    border: #ecd9ab;
+    color: #004f27;
+}
+
+/*
+Green:          #009B4D (0,155,77)
+Title Green:    #004f27 (0,79,39)
+Yellow:         #FFCC00 (255,204,0)
+Ivory:          #FAF5E9 (250,245,233)
+Ivory Darker    #ecd9ab (236,217,171)
+*/

@@ -1,0 +1,148 @@
+:root {
+    --green: #009B4D;
+    --title-green: #004f27;
+    --yellow: #FFCC00;
+    --ivory: #FAF5E9;
+    --ivory-darker: #ecd9ab;
+    --error-color: #c40000;
+    --font-family-default: "Trebuchet MS", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-default);
+    box-sizing: border-box;
+}
+
+/*USED FOR MESSAGES THAT POP-UP ON PAGE (errors etc)*/
+.message {
+    display: block;
+    padding-top: 15px;
+}
+
+/*WHEN ABOVE MESSAGES ARE MADE BOLD CHANGE TEXT*/
+.message b {
+    color: var(--error-color);
+}
+
+.page-container {
+    height: fit-content;
+    position: inherit;
+    transform: translate(50%);
+    width: 50%;
+    min-width: 170px;
+    max-width: 100%;
+    background: var(--ivory);
+    padding: 20px 50px 10px 50px;
+    margin-top: 2%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.page-container h1 {
+    font-size: x-large;
+    min-font-size: 10px;
+    margin-bottom: 30px;
+    color: var(--title-green);
+    position: relative;
+}
+
+/*DEALS WITH THE LINE UNDER THE TITLE*/
+.page-container h1::after {
+    content: '';
+    width: 30%;
+    height: 4px;
+    background: var(--title-green);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-container{
+
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 70px;
+}
+/*INPUT TEXT BOXES*/
+.input-field {
+    background: var(--ivory-darker);
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    transition: max-height 0.5s;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--title-green);
+}
+
+/*TEXT INSIDE INPUT TEXT BOXES*/
+.input-field input {
+    font-size: medium;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+}
+
+/*ICON FOR INPUT FIELDS*/
+.input-field i {
+    margin-left: 15px;
+    color: var(--title-green);
+}
+
+/*BUTTON FIELD (MANAGES POSITIONS, SIZE ETC)*/
+.button-field {
+    position: inherit;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.button-pair {
+    flex-basis: 0;
+}
+
+/*MANAGES THE BUTTON ITSELF*/
+.button-field .button-pair button {
+    min-width: 70px;
+    width: 100%;
+    background: var(--title-green);
+    font-size: medium;
+    color: var(--yellow);
+    padding: 10px 15px;
+
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+/*CHANGE BUTTON COLOUR WHEN NOT SELECTED*/
+.button-field button.disable {
+    background: rgba(236, 217, 171, 0.6);
+    border: var(--ivory-darker);
+    color: var(--title-green);
+}
+
+/*HIDES THINGS FROM WEBVIEW BUT NOT FROM SCREEN READERS*/
+.hide-from-view {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}

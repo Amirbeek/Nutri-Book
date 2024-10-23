@@ -1,0 +1,64 @@
+#ingredient_title {
+    text-align: center;
+    color: #004f27;
+}
+
+.ingredient_form_container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #FAF5E9;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 70px;
+}
+
+.ingredient_label {
+    display: block;
+    margin-top: 5px;
+}
+
+.ingredient_checkbox {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#ingredient_form {
+    padding : 20px;
+    display: block;
+}
+
+#ingredient_submit_button {
+    display: block;
+    margin: 10px auto;
+    background-color: #ecd9ab;
+    color: #004f27;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: large;
+    height: 44px;
+}
+
+#ingredient_submit_button:hover {
+    background-color: #004f27;
+    color: #FFCC00;
+}
+
+.ingredient_error_message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ingredient_list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    color: #004f27;
+}
+
+.ingredient_selected_ingredients_box {
+    padding: 5px;
+    margin-top: 10px;
+}
