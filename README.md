@@ -1,6 +1,6 @@
 # 🍽️ Recipe Sharing Application  
 
-![Nutri-book](	http://localhost:8000/static/5ea2e3d47e4d5ef3090c9dbfa2aad53d/084a3/nutribook.webp)
+![Nutri-book](https://amirbekshomurodov.me/static/5ea2e3d47e4d5ef3090c9dbfa2aad53d/b897f/nutribook.webp)
 
 A full-stack recipe-sharing platform built using **Java Spring Boot**, **React**, and **PostgreSQL**, featuring **Google Authentication** and **JWT-based security**.  
 
